@@ -1,0 +1,78 @@
+﻿BveTs Vehicle Parameters 2.01
+FirstCar = T
+LoadCompensating = true
+[OneLeverCab]
+BrakeNotchCount = 8
+PowerNotchCount = 4
+HoldingSpeedNotchCount = 0
+AtsCancelNotch = 1
+MotorBrakeNotch = 1
+[ConstantSpeedControl]
+Power = 1
+[Dynamics]
+MotorcarWeight = 32800
+TrailerWeight = 27283
+MotorcarCount = 4
+TrailerCount = 6
+MotorcarInertiaFactor = 0.1
+TrailerInertiaFactor = 0.05
+CarLength = 20
+[ViewPoint]
+X = -0.73
+Y = 2.5
+Z = -1.2
+[Door]
+CloseTime = 3.5
+[Compressor]
+LowerPressure = 686000
+UpperPressure = 784000
+CompressionSpeed = 5000
+[Ecb]
+MaximumPressure = 170000
+PressureRates = 0,0.125,0.25,0.375,0.5,0.625,0.75,0.875,1,1.333333,0.03125,0.0625,0.09375,0.125,0.15625,0.1875,0.21875,0.25,0.28125,0.3125,0.34375,0.375,0.40625,0.4375,0.46875,0.5,0.525,0.55,0.575,0.6,0.625,0.65,0.675,0.7,0.725,0.75,0.775,0.8,0.825,0.85,0.875
+SapBcRatio = 0.94
+SapBcOffset = 30000
+LeverDelay = 0.3
+[Brake]
+PistonArea = 1.194803
+ShoeFriction = 0.26, 0.01, 0.025
+[BcServo]
+ApplySpeed = 383.196
+ReleaseSpeed = 403.924
+VolumeRatio = 20
+ApplyStart = 20000
+ApplyStop = 0
+ReleaseStart = 20000
+ReleaseStop = 0
+[AirSupplement]
+RegenerationLimit = 6
+InitialPressure = 40000
+MaximumPressure = 170000
+ShoeFriction = 0.18
+[MainCircuit]
+BrakePriority = true
+RegenerationLimit = 0
+LeverDelay = 0.3
+SlipVelocityCoefficient = 0
+[PowerReAdhesion]
+SlipVelocity = 2
+SlipAcceleration = 10
+BalanceAcceleration = -5
+HoldingTime = 2
+ReferenceAcceleration = 4.3
+ReferenceDeceleration = 4.7
+CurrentDecrease = 0
+CurrentIncrease = 0
+[BrakeReAdhesion]
+SlipVelocity = 10
+SlipDeceleration = 20
+BalanceDeceleration = 0
+HoldingTime = 0
+ReferenceDeceleration = 5
+BcReleaseSpeed = 0
+BcApplySpeed = 0
+[Passengers]
+Capacity = 150
+BodyWeight = 65
+BoardingSpeed = 3.15
+AlightingSpeed = 6.3

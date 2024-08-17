@@ -1,0 +1,22 @@
+BveTs Map 2.02
+
+$Ex01_ReferencePoint = 0.000000;
+#y‹LÚ‹æŠÔz•â•
+#----------Šî–{üŒ`----------
+$Ex01_ReferencePoint + 0;
+	Curve.SetGauge(1.067);
+	Curve.SetCenter(1.0672);
+	Curve.SetFunction(1);
+
+$Ex01_ReferencePoint + 0;
+	Curve.Interpolate(0);
+$Ex01_ReferencePoint + 30;
+Curve.BeginTransition();
+$Ex01_ReferencePoint + 37;
+Curve.Begin(-500,0);
+$Ex01_ReferencePoint + 67;
+Curve.End();
+$Ex01_ReferencePoint + 70;
+Curve.Begin(500,0);
+$Ex01_ReferencePoint + 100;
+Curve.End();

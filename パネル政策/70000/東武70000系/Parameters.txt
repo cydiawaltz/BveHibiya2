@@ -1,0 +1,40 @@
+BveTs Vehicle Parameters 2.01
+[OneLeverCab]
+BrakeNotchCount = 7
+PowerNotchCount = 4
+[ConstantSpeedControl]
+Power = 3
+Neutral = 3
+Brake = 3
+[MainCircuit]
+RegenerationLimit = 0
+BrakePriority = true
+[PowerReAdhesion]
+SlipVelocity = 0.1
+SlipAcceleration = 3.3
+BalanceAcceleration = -0.1
+HoldingTime = 0.1
+ReferenceAcceleration = 3.3
+[Ecb]
+[AirSupplement]
+ShoeFriction = 0.284
+RegenerationLimit = 1 	
+[BcServo]
+[Brake]
+PistonArea = 0.436					
+ShoeFriction = 0.3833, 0.0149, 0.0281					
+[Compressor]
+LowerPressure = 640000
+UpperPressure = 780000
+[Dynamics]
+MotorcarWeight = 33800				
+TrailerWeight = 33725				
+MotorcarCount = 3				
+TrailerCount = 4				
+MotorcarInertiaFactor = 0.1				
+TrailerInertiaFactor = 0.05				
+[Passengers]
+Capacity = 148
+[Door]
+CloseTime = 4
+[ViewPoint]

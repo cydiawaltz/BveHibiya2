@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="Shift-JIS"?>
+<PluginConverter>
+	<DLL>
+		<Path>Ats.dll</Path>
+		<HasSetHandle>false</HasSetHandle>
+		<HasGetVehicleState>false</HasGetVehicleState>
+		<InitializeNfbOn>true</InitializeNfbOn>
+		<Get>    <Handle>false</Handle> <Power>true</Power> <Brake>true</Brake> <Reverser>true</Reverser> </Get>
+		<Set>    <Power>true</Power> <Brake>true</Brake> <Reverser>true</Reverser> <Csc>true</Csc> </Set>
+	</DLL>
+
+	<GENERAL>
+<Beacon><Type>22</Type>
+<Script>$OutType=-1;
+</Script>
+</Beacon>
+<Beacon><Type>18</Type>
+<Script>$OpeNum=$InData%100;
+</Script>
+</Beacon>
+<Beacon><Type>2</Type>
+<Script>$OutType=18;
+$TrainType=floor($InData/100000000);
+$TrainTypeS=if($TrainType-1,if($TrainType-2,if($TrainType-3,if($TrainType-4,0,6),2),11),14);
+$OpeNum=(floor($InData/1000000))%100;
+$Destination=(floor($InData/10000))%100;
+$OutData=$TrainTypeS*10000+$Destination*100+$OpeNum;
+</Script>
+</Beacon>
+<Beacon><Type>1</Type>
+<Script>$OutType=33;
+$OutData=floor($InData/1000)%10;
+</Script>
+</Beacon>
+
+	</GENERAL>
+</PluginConverter>

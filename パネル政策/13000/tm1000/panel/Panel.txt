@@ -1,0 +1,1026 @@
+Version 1.0
+
+[This]
+Resolution       = 1300
+Top              = 231
+Bottom           = 1876
+Right            = 1782
+Left             = 252
+Center           = 1015,1090
+Origin           = 1000,1000
+
+
+;運転台
+[Pilotlamp]
+Subject          = true
+Location         = 0,0
+DaytimeImage     = d3d\Panel.png
+NighttimeImage   = d3d\Panel_n.png
+Layer            = 6
+
+
+[Pilotlamp];ヘッドライト
+Subject          = ats161
+Location         = 0,0
+DaytimeImage     = sub\hedlight.png
+Layer            = 0
+
+
+[Pilotlamp];停止位置表示
+Subject          = true
+Location         = 515,1020
+DaytimeImage     = sub\stop2.png
+Layer            = 2
+
+[DigitalNumber]
+Subject          = ats91
+Location         = 500,1250
+DaytimeImage     = sub\Target.png
+Layer            = 15
+Interval         = 1
+
+[DigitalNumber]
+Subject          = ats91
+Location         = 500,1252
+DaytimeImage     = sub\Target.png
+Layer            = 15
+Interval         = 1
+
+[DigitalNumber]
+Subject          = ats91
+Location         = 500,1254
+DaytimeImage     = sub\Target.png
+Layer            = 15
+Interval         = 1
+
+
+
+;運転取扱機器
+
+[DigitalNumber];マスコンキー
+Subject          = ats92
+Location         = 834,1715
+DaytimeImage     = dr\key.png
+NighttimeImage   = dr\key_n.png
+Layer            = 7
+Interval         = 64
+
+[DigitalNumber];ATC切換スイッチ
+Subject          = ats72
+Location         = 388,1715
+DaytimeImage     = dr\atccgs.png
+NighttimeImage   = dr\atccgs_n.png
+Layer            = 11
+Interval         = 128
+
+[Pilotlamp];知らせ灯
+Subject          = door
+Location         = 953,1425
+DaytimeImage     = dr\dooron.png
+NighttimeImage   = dr\dooron_n.png
+Layer            = 7
+
+[Pilotlamp];ホームドア表示灯
+Subject          = ats181
+Location         = 986,1358
+DaytimeImage     = dr\fd.png
+NighttimeImage   = dr\fd_n.png
+Layer            = 8
+
+[Pilotlamp]
+Subject          = ats182
+Location         = 986,1358
+DaytimeImage     = dr\fd.png
+NighttimeImage   = dr\fd_n.png
+Layer            = 8
+
+[DigitalNumber];ホームドア表示灯（鍵条件）
+Subject          = ats92
+Location         = 986,1358
+DaytimeImage     = dr\fd_key.png
+NighttimeImage   = dr\fd_key_n.png
+Layer            = 8
+Interval         = 16
+
+[DigitalNumber];連動表示灯
+Subject          = ats155
+Location         = 986,1288
+DaytimeImage     = dr\fdlp.png
+NighttimeImage   = dr\fdlp_n.png
+Layer            = 8
+Interval         = 64
+
+
+
+;表示灯
+
+[Pilotlamp];ATC
+Subject          = ats19
+Location         = 416,1338
+DaytimeImage     = lp\atc.png
+NighttimeImage   = lp\atc_n.png
+Layer            = 8
+
+[Pilotlamp];構内
+Subject          = ats31
+Location         = 416,1355
+DaytimeImage     = lp\konai.png
+NighttimeImage   = lp\konai_n.png
+Layer            = 8
+
+[Pilotlamp];非設
+Subject          = ats29
+Location         = 416,1373
+DaytimeImage     = lp\hisetsu.png
+NighttimeImage   = lp\hisetsu_n.png
+Layer            = 8
+
+[Pilotlamp];常用
+Subject          = ats23
+Location         = 416,1398
+DaytimeImage     = lp\atcsb.png
+NighttimeImage   = lp\atcsb_n.png
+Layer            = 8
+
+[Pilotlamp];非常
+Subject          = ats22
+Location         = 416,1412
+DaytimeImage     = lp\atceb.png
+NighttimeImage   = lp\atceb_n.png
+Layer            = 8
+
+
+
+;計器
+
+[DigitalNumber];メータ表示器動作
+Subject          = ats60
+Location         = 894,1537
+DaytimeImage     = tis\active.png
+Layer            = 12
+Interval         = 16
+
+[Needle];速度計
+Subject          = ats171
+Location         = 816,1470
+DaytimeImage     = tis\sm.png
+Origin           = 16, 128
+Layer            = 11
+Radius           = 94
+InitialAngle     = -115
+LastAngle        = 115
+Minimum          = 0
+Maximum          = 90
+NaturalFreq      = 45
+DampingRatio     = 1
+
+[Needle];ORPゾーン表示
+Subject          = ats135
+Location         = 816,1471
+DaytimeImage     = tis\smr.png
+Origin           = 128, 128
+Layer            = 9
+Radius           = 128
+InitialAngle     = -114
+LastAngle        = 106
+Minimum          = 0
+Maximum          = 900
+NaturalFreq      = 45
+DampingRatio     = 1
+
+[Pilotlamp];ORPカバー
+Subject          = true
+Location         = 733,1502
+DaytimeImage     = tis\orpcov.png
+Layer            = 10
+
+
+;デジタルゲージ群
+[Needle];MR
+Subject          = mr
+Location         = 2239,1442
+DaytimeImage     = tis\mrg.png
+Origin           = 64, 2500
+Layer            = 3
+Radius           = 1600
+InitialAngle     = -93.1
+LastAngle        = -89.5
+Minimum          = 0
+Maximum          = 790
+NaturalFreq      = 45
+DampingRatio     = 1
+
+[Needle];BC
+Subject          = bc
+Location         = 2214,1503
+DaytimeImage     = tis\bcg.png
+Origin           = 64, 2500
+Layer            = 3
+Radius           = 1600
+InitialAngle     = -90.9
+LastAngle        = -87.3
+Minimum          = 0
+Maximum          = 790
+NaturalFreq      = 45
+DampingRatio     = 1
+
+[Pilotlamp];bcmrgベース
+Subject          = true
+Location         = 607,1361
+DaytimeImage     = tis\bcmrbase.png
+Layer            = 2
+
+[Pilotlamp];amgベース
+Subject          = true
+Location         = 603,1501
+DaytimeImage     = tis\ambase.png
+Layer            = 4
+
+[Needle];AM回生
+Subject          = ats202
+Location         = 2214,1575
+DaytimeImage     = tis\rbg.png
+Origin           = 64, 2500
+Layer            = 5
+Radius           = 1600
+InitialAngle     = -90.9
+LastAngle        = -87.3
+Minimum          = 0
+Maximum          = -135
+NaturalFreq      = 45
+DampingRatio     = 1
+
+[Needle];AM力行
+Subject          = ats202
+Location         = 2238,1575
+DaytimeImage     = tis\pwg.png
+Origin           = 64, 2500
+Layer            = 5
+Radius           = 1600
+InitialAngle     = -90.9
+LastAngle        = -87.3
+Minimum          = 0
+Maximum          = 135
+NaturalFreq      = 45
+DampingRatio     = 1
+
+
+;数字表示
+;SM
+[DigitalNumber];SM1
+Subject          = kmphd0
+Location         = 809,1499
+DaytimeImage     = tis\sm0.png
+Layer            = 14
+Interval         = 32
+
+[DigitalNumber];SM10
+Subject          = kmphd1
+Location         = 792,1499
+DaytimeImage     = tis\sm0.png
+Layer            = 14
+Interval         = 32
+
+;BCC
+[DigitalNumber];BCC100
+Subject          = bcd2
+Location         = 606,1337
+DaytimeImage     = tis\bcc100.png
+Layer            = 13
+Interval         = 16
+
+[DigitalNumber];BCC10
+Subject          = bcd1
+Location         = 614,1337
+DaytimeImage     = tis\bcc10.png
+Layer            = 13
+Interval         = 16
+
+[Pilotlamp];BCC1
+Subject          = true
+Location         = 622,1337
+DaytimeImage     = tis\bcc0.png
+Layer            = 13
+
+;MRC
+[DigitalNumber];MRC100
+Subject          = mrd2
+Location         = 637,1337
+DaytimeImage     = tis\mrc100.png
+Layer            = 10
+Interval         = 16
+
+[DigitalNumber];MRC10
+Subject          = mrd1
+Location         = 645,1337
+DaytimeImage     = tis\mrc100.png
+Layer            = 10
+Interval         = 16
+
+[DigitalNumber];MRC1
+Subject          = mrd0
+Location         = 653,1337
+DaytimeImage     = tis\mrc0.png
+Layer            = 10
+Interval         = 16
+
+
+
+;CS
+
+[Pilotlamp]
+Subject          = ats101
+Location         = 796,1531
+DaytimeImage     = atc\s02.png
+Layer            = 11
+
+[Pilotlamp]
+Subject          = ats102
+Location         = 728,1502
+DaytimeImage     = atc\s01.png
+Layer            = 11
+
+[Pilotlamp]
+Subject          = ats104
+Location         = 716,1462
+DaytimeImage     = atc\s10.png
+Layer            = 8
+
+[Pilotlamp]
+Subject          = ats105
+Location         = 719,1441
+DaytimeImage     = atc\s15.png
+Layer            = 8
+
+[Pilotlamp]
+Subject          = ats106
+Location         = 725,1421
+DaytimeImage     = atc\s20.png
+Layer            = 8
+
+[Pilotlamp]
+Subject          = ats107
+Location         = 735,1405
+DaytimeImage     = atc\s25.png
+Layer            = 8
+
+[Pilotlamp]
+Subject          = ats108
+Location         = 750,1390
+DaytimeImage     = atc\s30.png
+Layer            = 8
+
+[Pilotlamp]
+Subject          = ats109
+Location         = 767,1380
+DaytimeImage     = atc\s35.png
+Layer            = 8
+
+[Pilotlamp]
+Subject          = ats110
+Location         = 786,1374
+DaytimeImage     = atc\s40.png
+Layer            = 8
+
+[Pilotlamp]
+Subject          = ats111
+Location         = 808,1372
+DaytimeImage     = atc\s45.png
+Layer            = 8
+
+[Pilotlamp]
+Subject          = ats112
+Location         = 829,1374
+DaytimeImage     = atc\s50.png
+Layer            = 8
+
+[Pilotlamp]
+Subject          = ats113
+Location         = 848,1380
+DaytimeImage     = atc\s55.png
+Layer            = 8
+
+[Pilotlamp]
+Subject          = ats114
+Location         = 865,1390
+DaytimeImage     = atc\s60.png
+Layer            = 8
+
+[Pilotlamp]
+Subject          = ats115
+Location         = 880,1404
+DaytimeImage     = atc\s65.png
+Layer            = 8
+
+[Pilotlamp]
+Subject          = ats116
+Location         = 889,1422
+DaytimeImage     = atc\s70.png
+Layer            = 8
+
+[Pilotlamp]
+Subject          = ats117
+Location         = 894,1439
+DaytimeImage     = atc\s75.png
+Layer            = 8
+
+[Pilotlamp]
+Subject          = ats133
+Location         = 759,1510
+DaytimeImage     = atc\syk.png
+Layer            = 11
+
+[Pilotlamp]
+Subject          = ats134
+Location         = 765,1531
+DaytimeImage     = atc\sp.png
+Layer            = 11
+
+[Pilotlamp]
+Subject          = ats131
+Location         = 786,1338
+DaytimeImage     = atc\srs.png
+Layer            = 8
+
+[Pilotlamp]
+Subject          = ats132
+Location         = 824,1338
+DaytimeImage     = atc\sgs.png
+Layer            = 8
+
+
+
+;TIS画面ギミック
+
+
+;運行番号（10）
+[DigitalNumber]
+Subject          = ats153
+Location         = 1428,1337
+DaytimeImage     = tis\s10.png
+Layer            = 9
+Interval         = 8
+
+;運行番号（1）
+[DigitalNumber]
+Subject          = ats154
+Location         = 1436,1337
+DaytimeImage     = tis\s10.png
+Layer            = 9
+Interval         = 8
+
+;行先表示
+[DigitalNumber]
+Subject          = ats172
+Location         = 1403,1344
+DaytimeImage     = tis\s100.png
+Layer            = 10
+Interval         = 8
+
+;種別表示
+[DigitalNumber]
+Subject          = ats151
+Location         = 1121,1368
+DaytimeImage     = tis\class.png
+Layer            = 8
+Interval         = 20
+
+
+;ダイヤ曜日表示
+[DigitalNumber]
+Subject          = ats65
+Location         = 1174,1343
+DaytimeImage     = tis\day.png
+Layer            = 9
+Interval         = 9
+
+[DigitalNumber] ;TIS車両位置上段
+Subject          = ats62
+Location         = 1178,1384
+DaytimeImage     = tis\tis_car.png
+Layer            = 15
+Interval         = 8
+
+[DigitalNumber] ;TIS車両位置下段
+Subject          = ats62
+Location         = 1178,1510
+DaytimeImage     = tis\tis_car.png
+Layer            = 12
+Interval         = 8
+
+[DigitalNumber] ;開扉側表示
+Subject          = ats62
+Location         = 1122,1492
+DaytimeImage     = tis\maru.png
+Layer            = 11
+Interval         = 44
+
+
+
+;駅名表示(東武/暫定対応)236中,237発,238至
+[DigitalNumber]
+Subject          = ats236
+Location         = 1271,1340
+DaytimeImage     = tis\sta40.png
+Layer            = 10
+Interval         = 8
+
+[DigitalNumber]
+Subject          = ats237
+Location         = 1246,1340
+DaytimeImage     = tis\sta40.png
+Layer            = 10
+Interval         = 8
+
+[DigitalNumber]
+Subject          = ats238
+Location         = 1295,1340
+DaytimeImage     = tis\sta40.png
+Layer            = 10
+Interval         = 8
+
+
+;駅名表示(地下鉄)248中,249発,250至
+[DigitalNumber]
+Subject          = ats248
+Location         = 1271,1340
+DaytimeImage     = tis\sta40.png
+Layer            = 10
+Interval         = 8
+
+[DigitalNumber]
+Subject          = ats249
+Location         = 1246,1340
+DaytimeImage     = tis\sta40.png
+Layer            = 10
+Interval         = 8
+
+[DigitalNumber]
+Subject          = ats250
+Location         = 1295,1340
+DaytimeImage     = tis\sta40.png
+Layer            = 10
+Interval         = 8
+
+
+;駅名表示(東急)245中,246発,247至
+[DigitalNumber]
+Subject          = ats245
+Location         = 1271,1340
+DaytimeImage     = tis\sta50.png
+Layer            = 10
+Interval         = 8
+
+[DigitalNumber]
+Subject          = ats246
+Location         = 1246,1340
+DaytimeImage     = tis\sta50.png
+Layer            = 10
+Interval         = 8
+
+[DigitalNumber]
+Subject          = ats247
+Location         = 1295,1340
+DaytimeImage     = tis\sta50.png
+Layer            = 10
+Interval         = 8
+
+
+[DigitalNumber];運転台取り表示上段
+Subject          = ats92
+Location         = 1191,1370
+DaytimeImage     = tis\forward1.png
+Layer            = 15
+Interval         = 32
+
+[DigitalNumber];運転台取り表示下段
+Subject          = ats92
+Location         = 1191,1501
+DaytimeImage     = tis\forward2.png
+Layer            = 12
+Interval         = 32
+
+[Pilotlamp];閉扉時画面消去
+Subject          = door
+Location         = 1048,1491
+DaytimeImage     = tis\dooron_tis.png
+Layer            = 13
+
+
+[Pilotlamp] ;ユニット表示RB
+Subject          = ats52
+Location         = 1181,1392
+DaytimeImage     = tis\unit_rb.png
+Layer            = 11
+
+;[Pilotlamp] ;ユニット表示PW(下へ移動）
+;Subject          = true
+;Location         = 1181,1392
+;DaytimeImage     = tis\unit_pw.png
+;Layer            = 10
+
+[DigitalNumber] 
+Subject          = ats66
+Location         = 1181,1392
+DaytimeImage     = tis\unit_pw.png
+Layer            = 10
+Interval         = 6
+
+[Pilotlamp] ;ノッチ回生
+Subject          = ats52
+Location         = 1171,1399
+DaytimeImage     = tis\n_rb.png
+Layer            = 9
+
+[Pilotlamp] ;ノッチ定速
+Subject          = csc
+Location         = 1171,1399
+DaytimeImage     = tis\n_csc.png
+Layer            = 9
+
+[DigitalNumber] ;ノッチ送信/BS位置
+Subject          = ats51
+Location         = 1148,1412
+DaytimeImage     = tis\us_brake.png
+Layer            = 9
+Interval         = 45
+
+[DigitalNumber] ;ノッチ送信/BM位置
+Subject          = brake
+Location         = 1148,1412
+DaytimeImage     = tis\us_brake.png
+Layer            = 8
+Interval         = 45
+
+[DigitalNumber] ;ノッチ送信/PS位置
+Subject          = ats66
+Location         = 1148,1412
+DaytimeImage     = tis\us_power.png
+Layer            = 11
+Interval         = 45
+
+[DigitalNumber] ;ノッチ送信/PM位置
+Subject          = power
+Location         = 1148,1412
+DaytimeImage     = tis\us_power.png
+Layer            = 10
+Interval         = 45
+
+[DigitalNumber] ;港のP
+Subject          = ats174
+Location         = 1148,1412
+DaytimeImage     = tis\minatono2.png
+Layer            = 12
+Interval         = 45
+
+[DigitalNumber] ;港のB
+Subject          = ats175
+Location         = 1148,1412
+DaytimeImage     = tis\minatono1.png
+Layer            = 12
+Interval         = 45
+
+
+[DigitalNumber] ;BR位置
+Subject          = ats51
+Location         = 575,1376
+DaytimeImage     = tis\brake.png
+Layer            = 11
+Interval         = 127
+
+[DigitalNumber] ;ハンドル位置
+Subject          = brake
+Location         = 575,1376
+DaytimeImage     = tis\brake.png
+Layer            = 10
+Interval         = 127
+
+[DigitalNumber] ;PW表示
+Subject          = ats66
+Location         = 575,1488
+DaytimeImage     = tis\power.png
+Layer            = 13
+Interval         = 75
+
+[DigitalNumber] ;ハンドル位置
+Subject          = power
+Location         = 575,1488
+DaytimeImage     = tis\power.png
+Layer            = 12
+Interval         = 75
+
+
+;電圧検知
+[Needle]
+Subject          = ats232
+Location         = 1406,1420
+DaytimeImage     = tis\csv.png
+Origin           = 128,32
+Layer            = 4
+Radius           = 50
+InitialAngle     = 0
+LastAngle        = 20
+Minimum          = 0
+Maximum          = 500
+NaturalFreq      = 0
+DampingRatio     = 0
+
+[Needle]
+Subject          = ats232
+Location         = 1442,1420
+DaytimeImage     = tis\csv.png
+Origin           = 128,32
+Layer            = 4
+Radius           = 50
+InitialAngle     = 0
+LastAngle        = 25
+Minimum          = 0
+Maximum          = 500
+NaturalFreq      = 1.5
+DampingRatio     = 1
+
+[Needle]
+Subject          = ats232
+Location         = 1558,1377
+DaytimeImage     = tis\csv.png
+Origin           = 128,32
+Layer            = 4
+Radius           = 50
+InitialAngle     = 0
+LastAngle        = 70
+Minimum          = 0
+Maximum          = 500
+NaturalFreq      = .4
+DampingRatio     = 1
+
+[Needle]
+Subject          = ats232
+Location         = 1590,1377
+DaytimeImage     = tis\csv.png
+Origin           = 128,32
+Layer            = 4
+Radius           = 50
+InitialAngle     = 0
+LastAngle        = 70
+Minimum          = 0
+Maximum          = 500
+NaturalFreq      = .3
+DampingRatio     = 1
+
+
+[Pilotlamp] ;電圧検知0
+Subject          = true
+Location         = 1215,1394
+DaytimeImage     = tis\csv0.png
+Layer            = 3
+
+[Pilotlamp] 
+Subject          = true
+Location         = 1246,1394
+DaytimeImage     = tis\csv0.png
+Layer            = 3
+
+[Pilotlamp] 
+Subject          = true
+Location         = 1358,1394
+DaytimeImage     = tis\csv0.png
+Layer            = 3
+
+[Pilotlamp] 
+Subject          = true
+Location         = 1390,1394
+DaytimeImage     = tis\csv0.png
+Layer            = 3
+
+
+[Pilotlamp] ;電圧検知開放
+Subject          = ats22
+Location         = 1215,1394
+DaytimeImage     = tis\csv0.png
+Layer            = 5
+
+[Pilotlamp] 
+Subject          = ats22
+Location         = 1246,1394
+DaytimeImage     = tis\csv0.png
+Layer            = 5
+
+[Pilotlamp] 
+Subject          = ats22
+Location         = 1358,1394
+DaytimeImage     = tis\csv0.png
+Layer            = 5
+
+[Pilotlamp] 
+Subject          = ats22
+Location         = 1390,1394
+DaytimeImage     = tis\csv0.png
+Layer            = 5
+
+
+[Pilotlamp];ハイビーム
+Subject          = ats161
+Location         = 881,1330
+DaytimeImage     = tis\hibeam.png
+Layer            = 8
+
+
+[Pilotlamp];ドアR1
+Subject          = doorr3
+Location         = 1210,1490
+DaytimeImage     = tis\door_r1.png
+Layer            = 13
+
+[Pilotlamp];ドアR2
+Subject          = doorr0
+Location         = 1210,1490
+DaytimeImage     = tis\door_r2.png
+Layer            = 13
+
+[Pilotlamp];ドアR3,4
+Subject          = doorr3
+Location         = 1275,1490
+DaytimeImage     = tis\door_r34.png
+Layer            = 13
+
+[Pilotlamp];ドアR5
+Subject          = doorr0
+Location         = 1339,1490
+DaytimeImage     = tis\door_r5.png
+Layer            = 13
+
+[Pilotlamp];ドアR6
+Subject          = doorr3
+Location         = 1339,1490
+DaytimeImage     = tis\door_r6.png
+Layer            = 13
+
+
+
+[Pilotlamp];ドアL1,2
+Subject          = doorl3
+Location         = 1210,1523
+DaytimeImage     = tis\door_l12.png
+Layer            = 13
+
+[Pilotlamp];ドアL3
+Subject          = doorl0
+Location         = 1275,1523
+DaytimeImage     = tis\door_l3.png
+Layer            = 13
+
+[Pilotlamp];ドアL4
+Subject          = doorl3
+Location         = 1275,1523
+DaytimeImage     = tis\door_l4.png
+Layer            = 13
+
+[Pilotlamp];ドアL5,6
+Subject          = doorl3
+Location         = 1339,1523
+DaytimeImage     = tis\door_l56.png
+Layer            = 13
+
+
+
+;ワイパ
+
+;[Needle]
+;Subject          = ats157
+;Location         = 1310, 7496
+;DaytimeImage     = sub\Wiper1.png
+;NighttimeImage   = sub\Wiper1_n.png
+;TransparentColor = #0000ff
+;Origin           = 8, 4500
+;Layer            = 1
+;Radius           = 6850
+;InitialAngle     = 3.5
+;LastAngle        = 14.5
+;Minimum          = 0
+;Maximum          = 1
+;NaturalFreq      = 6
+;DampingRatio     = 1
+
+;[Needle]
+;Subject          = ats157
+;Location         = 1090,1900
+;DaytimeImage     = sub\Wiper2a.bmp
+;NighttimeImage   = sub\Wiper2a_n.bmp
+;TransparentColor = #0000ff
+;Origin           = 8, 300
+;Layer            = 0
+;Radius           = 954
+;InitialAngle     = 36
+;LastAngle        = 115
+;Minimum          = 0
+;Maximum          = 1
+;NaturalFreq      = 6
+;DampingRatio     = 1
+
+;[Needle]
+;Subject          = ats157
+;Location         = 1135,1900
+;DaytimeImage     = sub\Wiper2.bmp
+;NighttimeImage   = sub\Wiper2_n.bmp
+;TransparentColor = #0000ff
+;Origin           = 8, 300
+;Layer            = 0
+;Radius           = 954
+;InitialAngle     = 36
+;LastAngle        = 115
+;Minimum          = 0
+;Maximum          = 1
+;NaturalFreq      = 6
+;DampingRatio     = 1
+
+
+
+;将来準備
+
+;[Pilotlamp];行路表灯
+;Subject          = ats161 
+;Location         =
+;DaytimeImage     =
+;NighttimeImage   =
+;Layer            =
+
+
+;[Pilotlamp];ホームドア支障(準備)
+;Subject          = 
+;Location         = 986,1385
+;DaytimeImage     = dr\fde.png
+;NighttimeImage   = dr\fde_n.png
+;Layer            = 8
+
+;[Pilotlamp];ステップ支障(準備)
+;Subject          = 
+;Location         = 986,1406
+;DaytimeImage     = dr\ste.png
+;NighttimeImage   = dr\ste_n.png
+;Layer            = 8
+
+
+;[Pilotlamp];TASC制御(準備)
+;Subject          = 
+;Location         = 830,1529
+;DaytimeImage     = atc\tascc.png
+;Layer            = 11
+
+
+;[Pilotlamp];ATO(準備)
+;Subject          = 
+;Location         = 416,1438
+;DaytimeImage     = lp\ato.png
+;NighttimeImage   = lp\ato_n.png
+;Layer            = 8
+
+[Pilotlamp];TASC開放
+Subject          = ats19;29
+Location         = 416,1456
+DaytimeImage     = lp\tascco.png
+NighttimeImage   = lp\tascco_n.png
+Layer            = 8
+
+
+
+;特定状況設定
+
+;[Pilotlamp];非常運転表示灯
+;Subject          = ats122
+;Location         = 416,1318
+;DaytimeImage     = lp\emd.png
+;NighttimeImage   = lp\emd_n.png
+;Layer            = 9
+
+
+[Pilotlamp] ;異常表示1/駐車ブレーキ異常
+Subject          = ats22
+Location         = 1035,1325
+;DaytimeImage     = dwd\e1_embr.png ;区間用
+DaytimeImage     = dwd\e1_br.png ;通常用
+Layer            = 14
+
+;[Pilotlamp] ;異常表示2/EMSW投入表示
+;Subject          = ats122
+;Location         = 1035,1325
+;DaytimeImage     = dwd\e1_em1.png
+;Layer            = 13
+
+
+;[Pilotlamp];無信号区間EMSW投入時用/GR消灯
+;Subject          = ats122
+;Location         = 789,1320
+;DaytimeImage     = atc\cs_emsw.png
+;Layer            = 9
+
+;[Pilotlamp];無信号区間EMSW投入時用/02
+
+;Subject          = ats122
+;Location         = 796,1531
+;DaytimeImage     = atc\s02.png
+;Layer            = 11
+
+
+
+
+

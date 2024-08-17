@@ -1,0 +1,8 @@
+BveTs Vehicle 2.00
+PerformanceCurve = Notch\Notch.txt
+Parameters = Parameters.txt
+Panel = Panel\Panel2_A.cfg
+Sound = Sound.cfg
+Ats32 = files\MetroPILoader.dll
+#Ats64 = files\MetroPILoader_.dll
+MotorNoise = MotorNoise\MotorNoise.txt

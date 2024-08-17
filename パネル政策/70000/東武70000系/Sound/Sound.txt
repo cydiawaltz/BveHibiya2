@@ -1,0 +1,66 @@
+Version 1.0
+
+[Flange]
+0 = Flange.wav
+
+[Run]
+0 = Run0.wav
+1 = Run1.wav
+
+[Joint]
+0 = Joint.wav
+1 = Joint1.wav
+2 = Joint2.wav
+
+[buzzer]
+
+[Switch]
+
+[Brake]
+BC Release High = EBRelease.wav
+BC Release = Release.wav
+BC Release Full = Release.wav
+
+[Brake Handle]
+
+[Master Controller]
+
+[Compressor]
+Attack = CompressorA.wav
+Loop = Compressor.wav
+Release = CompressorR.wav
+
+[Door]
+Open Left = DoorOpn.wav
+Open Right = DoorOpn.wav
+Close Left = DoorCls.wav
+Close Right = DoorCls.wav
+
+[Horn]
+Primary = Horn.wav
+Secondary = Horn2.wav
+
+[Suspension]
+
+[Others]
+
+[Pilot Lamp]
+
+[ATS]
+2  = Chime.wav
+31 = Buzzer.wav
+32 = Yudou.wav
+34 = Josoku.wav
+92 = Buzzer2.wav
+99 = Buzzer1.wav
+
+[Motor]  
+0=M0.wav
+1=M1.wav
+2=M2.wav
+3=M3.wav
+4=M4.wav
+5=M5.wav
+6=M6.wav
+7=M7.wav
+8=M3.wav

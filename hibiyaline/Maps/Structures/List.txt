@@ -233,9 +233,14 @@ Freeobj214,minami\form5.x
 Freeobj215,minami\end.x
 Freeobj217,minami\kaidan.x
 form6,minami\form6.x
+dike,dike.x
+minodike,minodike.x
+dikeL,dikeL.x
+
 #test
 Rail3,B150.x
 Rail4,B170.x
+
 
 ”Ä—p
 H01_01,H01_01.x

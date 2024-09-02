@@ -10,9 +10,9 @@ RouteTitle = testS-03
 #Vehicle = trta05_chT\VehicleT.txt
 #Vehicle = tkk8590\Vehicle.txt
 #Vehicle = trta03_v30\vehicle.txt
-#Vehicle = trta03_chh\vehicle.txt
+Vehicle = trta03_chh\vehicle.txt
 #Vehicle = パネル政策\13000\13000\vehicle.txt
-Vehicle = パネル政策\完成\13000\vehicle.txt
+#Vehicle = パネル政策\完成\13000\vehicle.txt
 #Vehicle = パネル政策\70000\70000\vehicle.txt
 #trta03_chh_edited\files\key.cfg内の値を12から-1（営団固定）に変更
 VehicleTitle = Series03-124

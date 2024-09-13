@@ -236,6 +236,19 @@ form6,minami\form6.x
 dike,dike.x
 minodike,minodike.x
 dikeL,dikeL.x
+slab,slab.x
+slab2,slab2.x
+kisepole,kisepole.x
+kisepole_1,kisepole_1.x
+pole1,pole1.x
+pole1_1,pole1_1.x
+minami2,minami2.x
+vmise1,mise1.x
+shorttruss,shorttruss.x
+wall2conc,wall2conc.x
+saku3R,saku3R.x
+wall2concR,wall2concR.x
+tunin,tunin.x
 
 #test
 Rail3,B150.x

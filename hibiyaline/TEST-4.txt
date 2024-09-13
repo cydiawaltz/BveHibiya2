@@ -4,18 +4,11 @@ include '[[AtsEx::NOMPI]] This map requires to install AtsEX to execute map plug
 include '<AtsEx::USEATSEX>';
 include '<AtsEx::READDEPTH>1';
 include '<AtsEx::MapPluginUsing>MapPluginUsingTEST.xml';
-#include '<AtsEx::User::CydiaWaltz::MetroDrive::Level>Easy';
-#include '<AtsEx::User::Cydiawaltz::MetroDrive::isBonus>true';#trueだとボーナスステージあり
-#include '<AtsEx::User::Cydiawaltz::MetroDrive::isTaiken>true';
-#include '<AtsEx::User::Cydiawaltz::MetroDrive::addLocation>12950';
-#include '<AtsEx::User::Cydiawaltz::MetroDrive::addArrival>00:00:02';
-Train['test'].Load('TestTrain.txt', '1', 1);
+#Train['test'].Load('TestTrain.txt', '1', 1);
 
 AtsEx.Users.Wattz.MetroDrive.Level('Easy');
 AtsEx.Users.Wattz.MetroDrive.isBonus('true');
 AtsEx.Users.Wattz.MetroDrive.isTaiken('true');
-AtsEx.Users.Wattz.MetroDrive.isKayaba('true');
-
 
 
 #Structure.Load('Structures\List.txt');
@@ -33,12 +26,12 @@ include 'Maps\curve.txt';
 #勾配
 include 'Maps\Gradient.txt';
 #Structureと運転台明るさ
-include 'Maps\Structure.txt';
+include 'Maps\Structuretest.txt';
 include 'Maps\nakaoka\2_converted.txt';
 //include 'Maps\KitaMino.txt';
 //include 'Maps\H21~H20.txt';
 #人形町とか
-include 'Maps\NingyoNormal.txt';
+#include 'Maps\NingyoNormal.txt';
 9633;
 Station['H18'].Put(-1,-50,50);#上野
 10197;

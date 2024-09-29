@@ -2,9 +2,9 @@
 <Config xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <VehicleTrain>
     <StructureGroups>
-      <StructureGroup Vibrate="true" FirstStructureFront="">
+      <StructureGroup Vibrate="false" >
         <Structures>
-          <Structure Model="" Distance="" Span="" Z="" />
+          <Structure Model="../hibiyaline\Maps\Structures\Vehicle\03\03_1.x" Distance="18" Span="18" Z="-18" />
         </Structures>
       </StructureGroup>
     </StructureGroups>

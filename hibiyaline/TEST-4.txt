@@ -1,9 +1,5 @@
 BveTs Map 2.02
-include '[[AtsEx::NOMPI]] このマップでは AtsEX マッププラグインを使用しています。正常動作には AtsEX のインストールが必要です。詳細は https://automatic9045.github.io をご覧ください。';
-include '[[AtsEx::NOMPI]] This map requires to install AtsEX to execute map plugins. For more information, visit https://automatic9045.github.io';
-include '<AtsEx::USEATSEX>';
-include '<AtsEx::READDEPTH>1';
-include '<AtsEx::MapPluginUsing>MapPluginUsingTEST.xml';
+AtsEx.MapPlugin.LoadAssembly('C:\Users\wattz\Documents\BVE\MetoroDrive\MapPlugin\bin\Debug\net48\MapPlugin.dll');
 #Train['test'].Load('TestTrain.txt', '1', 1);
 
 AtsEx.Users.Wattz.MetroDrive.Level('Easy');

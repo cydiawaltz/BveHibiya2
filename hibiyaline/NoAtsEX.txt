@@ -1,14 +1,4 @@
 BveTs Map 2.02
-#include '[[AtsEx::NOMPI]] このマップでは AtsEX マッププラグインを使用しています。正常動作には AtsEX のインストールが必要です。詳細は https://automatic9045.github.io をご覧ください。';
-#include '[[AtsEx::NOMPI]] This map requires to install AtsEX to execute map plugins. For more information, visit https://automatic9045.github.io';
-#include '<AtsEx::USEATSEX>';
-#include '<AtsEx::READDEPTH>1';
-#include '<AtsEx::MapPluginUsing>MapPluginUsingTEST.xml';
-#include '<AtsEx::User::CydiaWaltz::MetroDrive::Level>Easy';
-#include '<AtsEx::User::Cydiawaltz::MetroDrive::isBonus>true';#trueだとボーナスステージあり
-#include '<AtsEx::User::Cydiawaltz::MetroDrive::isTaiken>true';
-#include '<AtsEx::User::Cydiawaltz::MetroDrive::addLocation>12950';
-#include '<AtsEx::User::Cydiawaltz::MetroDrive::addArrival>00:00:02';
 Train['test'].Load('TestTrain.txt', '1', 1);
 
 
